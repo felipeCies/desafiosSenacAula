@@ -2,7 +2,7 @@ package com.desafiosSenac;
 
 import java.util.Scanner;
 
-public class CalculadoraIdade {
+class CalculadoraIdade {
     public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);

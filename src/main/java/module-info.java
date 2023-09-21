@@ -3,6 +3,6 @@ module com.example.desafiossenac {
     requires javafx.fxml;
             
                             
-    opens com.example.desafiossenac to javafx.fxml;
-    exports com.example.desafiossenac;
+    opens com.desafiosSenac to javafx.fxml;
+    exports com.desafiosSenac;
 }
