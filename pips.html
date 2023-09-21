@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script>
+const valores = [];
+let pares = 0;
+let impares = 0;
+let positivos = 0;
+let negativos = 0;
+
+
+for (let i = 0; i < 5; i++) {
+  const valor = parseInt(prompt(`Digite o ${i + 1}º valor:`));
+  valores.push(valor);
+
+ 
+  if (valor % 2 === 0) {
+    pares++;
+  } else {
+    impares++;
+  }
+
+
+  if (valor > 0) {
+    positivos++;
+  } else if (valor < 0) {
+    negativos++;
+  }
+}
+
+document.write(`Valores lidos:<br> ${valores.join(',<br> ')}`);
+document.write(`<br>Quantidade de valores pares: ${pares}`);
+document.write(`<br>Quantidade de valores ímpares: ${impares}`);
+document.write(`<br>Quantidade de valores positivos: ${positivos}`);
+document.write(`<br>Quantidade de valores negativos: ${negativos}`);
+
+</script>
