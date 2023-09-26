@@ -1,0 +1,45 @@
+<script>
+    alert("Você é um pedestre ou motorista?");
+    var num = prompt('Responda 1 para pedestre e 2 para motorista.');
+
+    if (num == 1) {
+        var p1 = prompt('Você está na faixa de travessia de pedestres? Responda com s ou n');
+        var p2 = prompt('O semáforo está vermelho para os carros? Responda com s ou n');
+
+        if (p1 === 's' && p2 === 'n') {
+            alert("Então não atravesse.");
+        } else if (p1 === 's' && p2 === 's') {
+            alert('Atravesse logo para o motorista não ficar chateado.');
+        } else if (p1 === 'n' && p2 === 'n') {
+            alert('Então vai em frente, mas com cuidado.');
+        } else {
+            alert("Por favor, responda com 's' ou 'n'.");
+        }
+    } else if (num == 2) {
+        var p3 = prompt('Você está usando cinto de segurança?');
+        var p4 = prompt('Você bebeu algo alcoólico?');
+        var p5 = prompt('O semáforo está verde?');
+
+        if(p3 == 's' && p4 == 's' && p5 == 's'){
+alert("Por favor não atropele ninguém")
+        } else  if(p3 == 'n' && p4 == 'n' && p5 == 'n'){
+alert("Permaneça parado e coloque o cinto de segurança")
+        } else  if(p3 == 's' && p4 == 'n' && p5 == 's'){
+alert("Continue em frente")
+        } else  if(p3 == 'n' && p4 == 's' && p5 == 'n'){
+alert("estacione o caroo, não dirija alcolizado")
+        } else  if(p3 == 's' && p4 == 's' && p5 == 'n'){
+alert("Não dirija enquanto está bebado, estacione o carro")
+        } else  if(p3 == 's' && p4 == 'n' && p5 == 'n'){
+alert("Espere o sinal abrir")
+        } else  if(p3 == 'n' && p4 == 's' && p5 == 's'){
+alert("Sai desse carro, quando for dirigir não beba e use o cinto de segurança")
+        } else  if(p3 == 'n' && p4 == 'n' && p5 == 's'){
+alert("Antes de seguir em frente coloque o cinto de segurança")
+        }  else {
+            alert("Por favor, responda com 's' ou 'n'.");
+        }
+    } else {
+        alert("Por favor, escolha 1 para pedestre ou 2 para motorista.");
+    }
+</script>
