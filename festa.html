@@ -1,44 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reserva de Ingresso</title>
+</head>
+<body>
 <script>
     var nome = prompt("Diga seu nome:");
     var idade = prompt("Digite sua idade:");
     var python = prompt("Você é estudante de python? Digite s ou n");
-    if (idade < 18){
-        alert("Vai pra casa mlk")
+
+    if (idade < 18) {
+        alert("Vai pra casa mlk");
     } else {
-    var ingresso = prompt("Você deseja o ingresso padrão(digite 1) ou vip(digite 2)?")}
-    if (ingresso == 1 && python == 's'){
-document.write("---------------------------------------" + "<br>");
-document.write("Comprovante de reserva de Ingresso" + "<br>");
-document.write("---------------------------------------" + "<br>");
-document.write("<br>")
-document.write(nome + " seu ingresso padrão foi reservado com sucesso!" + "<br>");
-document.write("Por ser estudante de python você ganhou 50% de desconto" + "<br>");
-document.write("Valor sem desconto: R$20,00" + "<br>");
-document.write("Valor com desconto: R$10,00");
-    } else if (ingresso == 1 && python == 'n'){
-        document.write("---------------------------------------" + "<br>");
-document.write("Comprovante de reserva de Ingresso" + "<br>");
-document.write("---------------------------------------" + "<br>");
-document.write("<br>")
-document.write(nome + " seu ingresso padrão foi reservado com sucesso!" + "<br>");
-document.write("Valor do seu ingresso: R$20,00");
-    } else if (ingresso == 2 && python == 's'){
-        document.write("---------------------------------------" + "<br>");
-document.write("Comprovante de reserva de Ingresso" + "<br>");
-document.write("---------------------------------------" + "<br>");
-document.write("<br>")
-document.write(nome + " seu ingresso VIP foi reservado com sucesso!" + "<br>");
-document.write("Por ser estudante de python você ganhou 50% de desconto" + "<br>");
-document.write("Valor sem desconto: R$50,00" + "<br>");
-document.write("Valor com desconto: R$25,00");
-    } else if (ingresso == 2 && python == 'n'){
-        document.write("---------------------------------------" + "<br>");
-document.write("Comprovante de reserva de Ingresso" + "<br>");
-document.write("---------------------------------------" + "<br>");
-document.write("<br>")
-document.write(nome + " seu ingresso VIP foi reservado com sucesso!" + "<br>");
-document.write("Valor do seu ingresso: R$50,00");
-    } else{
-        alert('comprovante não impresso devido a valores inválidos.');
+        var ingresso;
+
+        do {
+            ingresso = prompt("Você deseja o ingresso padrão (digite 1) ou vip (digite 2)?");
+
+            if (ingresso == 1 && python == 's') {
+                document.write("<br>" + "---------------------------------------" + "<br>");
+                document.write("Comprovante de reserva de Ingresso" + "<br>");
+                document.write("---------------------------------------" + "<br>");
+                document.write("<br>")
+                document.write(nome + " seu ingresso padrão foi reservado com sucesso!" + "<br>");
+                document.write("Por ser estudante de python você ganhou 50% de desconto" + "<br>");
+                document.write("Valor sem desconto: R$20,00" + "<br>");
+                document.write("Valor com desconto: R$10,00");
+            } else if (ingresso == 1 && python == 'n') {
+                document.write("<br>" + "---------------------------------------" + "<br>");
+                document.write("Comprovante de reserva de Ingresso" + "<br>");
+                document.write("---------------------------------------" + "<br>");
+                document.write("<br>")
+                document.write(nome + " seu ingresso padrão foi reservado com sucesso!" + "<br>");
+                document.write("Valor do seu ingresso: R$20,00");
+            } else if (ingresso == 2 && python == 's') {
+                document.write("<br>" + "---------------------------------------" + "<br>");
+                document.write("Comprovante de reserva de Ingresso" + "<br>");
+                document.write("---------------------------------------" + "<br>");
+                document.write("<br>")
+                document.write(nome + " seu ingresso VIP foi reservado com sucesso!" + "<br>");
+                document.write("Por ser estudante de python você ganhou 50% de desconto" + "<br>");
+                document.write("Valor sem desconto: R$50,00" + "<br>");
+                document.write("Valor com desconto: R$25,00");
+            } else if (ingresso == 2 && python == 'n') {
+                document.write("<br>" + "---------------------------------------" + "<br>");
+                document.write("Comprovante de reserva de Ingresso" + "<br>");
+                document.write("---------------------------------------" + "<br>");
+                document.write("<br>")
+                document.write(nome + " seu ingresso VIP foi reservado com sucesso!" + "<br>");
+                document.write("Valor do seu ingresso: R$50,00");
+            } else {
+                alert('Comprovante não impresso devido a valores inválidos.');
+            }
+
+            var ing = prompt("Você deseja comprar outro ingresso? Responda com s ou n");
+
+        } while (ing == 's');
     }
 </script>
+</body>
+</html>
