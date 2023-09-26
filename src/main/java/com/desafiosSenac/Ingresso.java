@@ -49,6 +49,8 @@ public class Ingresso {
                 System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso foi reservado!"
                         + "\n valor do ingresso: " + "R$50.00");
             }
+        }else {
+            System.out.println("Volta pro minecraft man!");
         }
     }
 }
