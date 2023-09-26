@@ -52,6 +52,6 @@ public class FaixaPedestre {
             }
         }
 
-
+                scanner.close();
     }
 }
