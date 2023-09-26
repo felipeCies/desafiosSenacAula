@@ -5,6 +5,7 @@
 </head>
 <body>
 <script>
+    do{
     var nome = prompt("Diga seu nome:");
     var idade = prompt("Digite sua idade:");
     var python = prompt("Você é estudante de python? Digite s ou n");
@@ -14,7 +15,7 @@
     } else {
         var ingresso;
 
-        do {
+
             ingresso = prompt("Você deseja o ingresso padrão (digite 1) ou vip (digite 2)?");
 
             if (ingresso == 1 && python == 's') {
@@ -55,8 +56,9 @@
 
             var ing = prompt("Você deseja comprar outro ingresso? Responda com s ou n");
 
-        } while (ing == 's');
+
     }
+} while (ing == 's');
 </script>
 </body>
 </html>
