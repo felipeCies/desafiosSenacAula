@@ -23,7 +23,7 @@ public class Ingresso {
             estudante = scanner.nextLine();
 
 
-            System.out.println("Você deseja o ingresso VIP ou Padrão?" + "\n1-Padrão: R$50.000" +"\n2-VIP: R$100.00");
+            System.out.println("Você deseja o ingresso VIP ou Padrão?" + "\n1-Padrão: R$20.000" +"\n2-VIP: R$50.00");
             String ingresso;
             ingresso = scanner.nextLine();
 
@@ -31,23 +31,23 @@ public class Ingresso {
 
                 System.out.println("============================================");
                 System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso " +
-                        " com desconto foi reservado!" + "\n valor do ingresso: " + "R$25.00");
+                        " com desconto por ser estudante de python foi reservado!" + "\n valor do ingresso: " + "R$10.00");
 
             } else if (estudante.equalsIgnoreCase("s") && ingresso.equalsIgnoreCase("1")){
                 System.out.println("============================================");
                 System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso foi reservado!"
-                        + "\n valor do ingresso: " + "R$50.00");
+                        + "\n valor do ingresso: " + "R$20.00");
 
             } else if (estudante.equalsIgnoreCase("s") && ingresso.equalsIgnoreCase("2")){
                 System.out.println("============================================");
 
-                System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso com desconto foi reservado!"
-                        + "\n valor do ingresso: " + "R$50.00");
+                System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso com desconto por ser estudante de python foi reservado!"
+                        + "\n valor do ingresso: " + "R$25.00");
 
             }else if (estudante.equalsIgnoreCase("n") && ingresso.equalsIgnoreCase("2")){
                 System.out.println("============================================");
                 System.out.println("Comprovante de reserva de ingresso:" +"\n"+ nome +"\n Seu ingresso foi reservado!"
-                        + "\n valor do ingresso: " + "R$100.00");
+                        + "\n valor do ingresso: " + "R$50.00");
             }
         }
     }
