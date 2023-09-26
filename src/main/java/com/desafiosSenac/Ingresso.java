@@ -7,9 +7,11 @@ public class Ingresso {
 
         Scanner scanner = new Scanner(System.in);
         int escolha;
-        String nome;
+        String nome, estudante;
         int idade;
 
+
+        do {
         System.out.println("Qual seu nome?");
         nome = scanner.nextLine();
 
@@ -17,14 +19,11 @@ public class Ingresso {
         idade = scanner.nextInt();
         scanner.nextLine();
 
+        System.out.println("você estuda python? Responda com s(sim) ou n(não)");
+        estudante = scanner.nextLine();
 
-        do {
+
             if (idade >= 18) {
-                System.out.println("você estuda python? Responda com s(sim) ou n(não)");
-                String estudante;
-                estudante = scanner.nextLine();
-
-
                 System.out.println("Você deseja o ingresso VIP ou Padrão?" + "\n1-Padrão: R$20.000" + "\n2-VIP: R$50.00");
                 String ingresso;
                 ingresso = scanner.nextLine();
