@@ -10,7 +10,7 @@ public class Desafio7 {
         int par = 0, impar = 0, negativo = 0, positivo = 0;
 
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Entre com o " + i + "º número:");
+            System.out.println("Entre com o " + i + "° número:");
             int numero = scanner.nextInt();
 
             if (numero % 2 == 0) {
